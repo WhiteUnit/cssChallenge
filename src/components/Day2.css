@@ -1,0 +1,118 @@
+.frame {
+  height: 400px;
+  width: 400px;
+  background: #3faf82;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger-menu {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bar {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  height: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.hamburger-menu .top-bar-active {
+  animation: bar-animation-45 0.7s ease-in-out forwards;
+}
+
+.hamburger-menu .middle-bar-active {
+  animation: bar-animation-mid 0.4s ease-in-out forwards;
+}
+
+.hamburger-menu .bottom-bar-active {
+  animation: bar-animation-135 0.7s ease-in-out forwards;
+}
+
+.hamburger-menu .top-bar-not-active {
+  animation: bar-animation-45-rev 0.7s ease-in-out forwards;
+}
+
+.hamburger-menu .middle-bar-not-active {
+  animation: bar-animation-mid-rev 0.7s ease-in-out forwards;
+}
+
+.hamburger-menu .bottom-bar-not-active {
+  animation: bar-animation-135-rev 0.7s ease-in-out forwards;
+}
+
+@keyframes bar-animation-mid {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes bar-animation-45 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 20px, 0px) rotate(45deg);
+  }
+}
+@keyframes bar-animation-135 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -20px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -20px, 0px) rotate(135deg);
+  }
+}
+
+@keyframes bar-animation-mid-rev {
+  0% {
+    transform: scale(0, 1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes bar-animation-45-rev {
+  0% {
+    transform: translate3d(0px, 20px, 0px) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes bar-animation-135-rev {
+  0% {
+    transform: translate3d(0px, -20px, 0px) rotate(135deg);
+  }
+  50% {
+    transform: translate3d(0px, -20px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}

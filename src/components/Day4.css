@@ -1,0 +1,94 @@
+.frame-rings {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background: #db6868;
+}
+
+.center-rings {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-ring {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 25px;
+  left: 25px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px #464646;
+  animation-fill-mode: both;
+  animation: first-ring-anim 3s ease-in-out infinite
+    alternate;
+  z-index: 1;
+}
+
+.second-ring {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  left: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px #464646;
+  animation-fill-mode: both;
+  animation: second-ring-anim 3s ease-in-out infinite
+    alternate;
+  z-index: 2;
+}
+
+.third-ring {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 75px;
+  left: 75px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px #464646;
+  animation-fill-mode: both;
+  animation: third-ring-anim 3s ease-in-out infinite
+    alternate;
+  z-index: 3;
+}
+
+@keyframes first-ring-anim {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes second-ring-anim {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes third-ring-anim {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

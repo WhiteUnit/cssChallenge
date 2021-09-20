@@ -1,0 +1,235 @@
+.frame-chart{
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 5px 0px 3px #e0e0e0;
+}
+
+.chart{
+    position: relative;
+}
+
+.description-chart{
+    height: 80px;
+    width: 400px;
+    background: #ffc13b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.report-date{
+    text-align: left;
+}
+
+.revenue-price{
+    text-align: right;
+}
+
+h2{
+    font-size: 19px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.line-description{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+}
+
+.line-description-item{
+    padding-right: 39px;
+}
+
+.line-red{
+    border-bottom: 6px solid red;
+    width: 30px;
+    transform: translate(-45%, -45%);
+}
+
+.line-blue{
+    border-bottom: 6px solid blue;
+    width: 30px;
+    transform: translate(-45%, -45%);
+}
+
+.chart-lines{
+    height: 150px;
+    position: relative;
+}
+
+.days{
+    height: 50px;
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:1px solid black;
+    padding: 10px 0  10px 0;
+    margin: 0 auto;
+}
+.data-point {
+    border-radius: 50%;
+    bottom: 30px;
+    height: 12px;
+    left: 32px;
+    position: absolute;
+    width: 12px;
+    z-index: 1;
+  }
+
+.bot{
+    background-color: blue;
+}
+
+.mon-dot-bot{
+    bottom: 31px;
+    left: 32px;
+}
+
+.tue-dot-bot{
+    bottom: 14px;
+    left: 86px;
+}
+
+.wed-dot-bot{
+    bottom: 28px;
+    left: 142px;
+}
+
+.thu-dot-bot{
+    bottom: 16px;
+    left: 200px;
+}
+
+.fri-dot-bot{
+    bottom: 42px;
+    left: 255px;
+}
+
+.sat-dot-bot{
+    bottom: 14px;
+    left: 305px;
+}
+
+.sun-dot-bot{
+    bottom: 24px;
+    left: 357px;
+}
+
+.top{
+    background-color: red;
+}
+
+.mon-dot-top{
+    bottom: 52px;
+    left: 32px;
+}
+
+.tue-dot-top{
+    bottom: 97px;
+    left: 87px;
+}
+
+.wed-dot-top{
+    bottom: 79px;
+    left: 142px;
+}
+
+.thu-dot-top{
+    bottom: 99px;
+    left: 200px;
+}
+
+.fri-dot-top{
+    bottom: 75px;
+    left: 255px;
+}
+
+.sat-dot-top{
+    bottom: 65px;
+    left: 305px;
+}
+
+.sun-dot-top{
+    bottom: 96px;
+    left: 357px;
+}
+
+.first-line{
+    fill:none;
+    stroke:blue;
+    stroke-width:3
+}
+
+.second-line{
+    fill:none;
+    stroke:red;
+    stroke-width:3
+}
+
+.chart-field-first{
+    width: 400px;
+}
+
+.chart-field-second{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 400px;
+}
+
+.top-line{
+    width: 380px;
+    height: 10px;
+    position: absolute;
+    left: 10px;
+    border-bottom: .4px solid black
+}
+
+.middle-line{
+    width: 380px;
+    height: 10px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    border-bottom: .4px solid #a7a7a7;
+    z-index: 0;
+}
+
+.number-chart{
+    position: absolute;
+    padding: 3px;
+    top: -30px;
+    left: -7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 7px;
+}
+
+.bot .number-chart{
+    background: blue;
+    color: whitesmoke;
+}
+
+.top .number-chart{
+    left: 10px;
+    top: 10px;
+    transform: rotate(-50deg);
+    background: red;
+    color: whitesmoke;
+}
+
+.data-point:hover .number-chart{
+    opacity: 1;
+    transition: .4s;
+}

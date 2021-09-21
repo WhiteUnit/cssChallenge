@@ -5,8 +5,8 @@ const Day1 = () => {
   return (
     <div className="container">
       <div className="digit-container">
-        <div className="first-digit top"></div>
-        <div className="first-digit bottom"></div>
+        <div className="first-digit top-of-digit"></div>
+        <div className="first-digit bottom-of-digit"></div>
         <div className="first-zero"></div>
         <div className="second-zero"></div>
       </div>

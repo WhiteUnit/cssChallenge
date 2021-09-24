@@ -1,0 +1,213 @@
+.frame-note{
+    height: 400px;
+    width: 400px;
+    background: #264057;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.hovered-menu{
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    background: #43627D;
+    color: #93B2CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: .6s ease-in-out;
+}
+
+.active-hovered{
+    transform: translate(-60%, -50%);
+}
+
+.inactive-hovered{
+    transform: translate(-50%, -50%);
+}
+
+.hovered-menu-item{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    transition: .3s ease-in-out;
+}
+
+.hovered-menu-item:hover{
+    color: #fff;
+    background: #385269;
+}
+
+.squire-ul{
+    height: 6px;
+    width: 6px;
+    border: 1px solid #93B2CD;
+    margin: 5px;
+    transition: .3s ease-in-out;
+}
+
+.hovered-menu-item:hover .squire-ul{
+    border-color:#fff;
+}
+
+.notification-box{
+    position:absolute;
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out;
+}
+
+.active{
+    transform: translate(-0%, -50%);
+}
+
+.inactive{
+    transform: translate(-50%, -50%);
+}
+
+.notification-navigation{
+    height: 60px;
+    width: 100%;
+    background: #5F98CD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.menu-line{
+    height: 3px;
+    width: 30px;
+    background: #B2DAFF;
+    margin: 4px 0 4px 0;
+    transition: .3s ease-in-out;
+}
+
+.menu-dot{
+    position: absolute;
+    background: #B2DAFF;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    left: 24px;
+    top: 2px;
+    box-shadow: 0px 0px 5px #5F98CD;
+    transition: .3s ease-in-out;
+}
+
+.menu-button:hover .menu-line{
+    background: #fff;
+}
+
+.menu-button:hover .menu-dot{
+    background: #fff;
+}
+
+.title-notification{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+}
+
+.search-button{
+    width: 10%;
+    height: 14px;
+    border: 2px solid #B2DAFF;
+    margin: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.search-input{
+    height: 34px;
+    width: 185px;
+    border-radius: 20px;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid #5F98CD;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.search-active{
+    opacity: 1;
+    transform: translateX(0px);
+    pointer-events: all;
+}
+
+.search-inactive{
+    opacity: 0;
+    transform: translateX(100px);
+    pointer-events: none}
+
+.notification-space{
+    display: flex;
+}
+
+.notification-line{
+    width: 30px;
+    height: 240px;
+    border-right: 3px solid #dfdfdf;
+}
+
+.notification{
+    width: 230px;
+    height: 30px;
+    padding: 20px 0px 0px 20px;
+    margin-bottom: 25px;
+    position: relative;
+    transition: .7 ease-in-out;
+}
+
+.time-notification{
+    font-size: 11px;
+    padding-bottom: 4px;
+}
+
+.first-letters-not{
+    font-weight: 700;
+}
+
+.circle-notification{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #5F98CD;
+    border-radius: 50%;
+    left: -8px;
+    box-shadow: 0px 0px 0px 3px #fff;
+    background: #fff;
+}
+
+.notification:hover{
+    color: #5F98CD;
+}
+
+.notification-container{
+    display: flex;
+    flex-direction: column;
+}

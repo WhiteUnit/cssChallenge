@@ -1,0 +1,107 @@
+.clock-frame{
+    width: 400px;
+    height: 400px;
+    background: #4C4C4C;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-clock-frame{
+    width: 240px;
+    height: 240px;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #363636;
+    position: relative;
+}
+
+.circle-anima{
+    position: absolute;
+    stroke-dasharray: 295px;
+    stroke:#ff0000;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    fill: none;
+    animation: fill-circle 4s linear infinite;
+    transform-origin: 50px 50px;
+    transform: rotate(270deg) scaleY(1);
+}
+
+.clock-data-container{
+    color: #fff;
+    position: absolute;
+    z-index: 30;
+    transform: translate(47%, -184%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-date{
+    font-size: 14px;
+}
+
+.clock{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.body-information{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.heart-bitrate{
+    margin-right: 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kcal-value{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.clock-hearth{
+    width: 12px;
+    height: 12px;
+    border:1px solid #ff5e00;
+    margin-right: 5px;
+    animation: bitting .7s linear infinite;
+}
+
+@keyframes fill-circle {
+    0%{
+        stroke-dashoffset: 295px;
+        transform: rotate(270deg) scaleY(1);
+    }
+    50%{
+        stroke-dashoffset: 0;
+        transform: rotate(270deg) scaleY(1);
+    }
+    50.001%{
+        stroke-dashoffset: 0;
+        transform: rotate(270deg) scaleY(-1);
+    }
+    100%{
+        stroke-dashoffset: 295px;
+        transform: rotate(270deg) scaleY(-1);
+    }
+}
+
+@keyframes bitting {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
